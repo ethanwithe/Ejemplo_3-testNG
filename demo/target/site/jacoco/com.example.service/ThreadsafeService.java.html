@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ThreadsafeService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">example1</a> &gt; <a href="index.source.html" class="el_package">com.example.service</a> &gt; <span class="el_source">ThreadsafeService.java</span></div><h1>ThreadsafeService.java</h1><pre class="source lang-java linenums">package com.example.service;
+
+import java.util.LinkedList;
+
+<span class="fc" id="L5">public class ThreadsafeService {</span>
+
+<span class="fc" id="L7">    private LinkedList&lt;Integer&gt; list = new LinkedList&lt;&gt;();</span>
+
+    public synchronized void increment() {
+<span class="fc" id="L10">        int nextNumber = 0;</span>
+<span class="fc" id="L11">        int size = list.size();</span>
+<span class="fc bfc" id="L12" title="All 2 branches covered.">        if (size &gt; 0) {</span>
+<span class="fc" id="L13">            nextNumber = list.getLast() + 1;</span>
+        }
+<span class="fc" id="L15">        Integer nextInteger = new Integer(nextNumber);</span>
+<span class="fc" id="L16">        list.addLast(nextInteger);</span>
+<span class="fc" id="L17">    }</span>
+   
+    //0 =&gt; 2 ... =&gt; n-1
+    
+    public synchronized int[] getArray() {
+<span class="fc" id="L22">        int[] intArray = new int[list.size()];</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        for (int i = 0; i &lt; list.size(); i++) {</span>
+<span class="fc" id="L24">            intArray[i] = list.get(i);    </span>
+        }
+<span class="fc" id="L26">        return intArray;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

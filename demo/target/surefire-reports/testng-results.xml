@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="86" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="86" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+      <class name="com.example.AppTest">
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="19" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="19" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="0" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="0" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="0" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="0" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="0" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="1" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="0" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="testMultithreading()[pri:0, instance:com.example.AppTest@258ee7de]" name="testMultithreading" duration-ms="0" started-at="2024-06-29T19:51:32Z" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultithreading -->
+        <test-method status="PASS" signature="listIntegrityNotCompromisedAfterThreadExecution()[pri:0, instance:com.example.AppTest@258ee7de]" name="listIntegrityNotCompromisedAfterThreadExecution" duration-ms="0" started-at="2024-06-29T19:51:32Z" depends-on-methods="com.example.AppTest.testMultithreading" finished-at="2024-06-29T19:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listIntegrityNotCompromisedAfterThreadExecution -->
+      </class> <!-- com.example.AppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
