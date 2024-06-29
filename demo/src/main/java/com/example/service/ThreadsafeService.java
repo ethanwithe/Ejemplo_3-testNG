@@ -16,27 +16,29 @@ public class ThreadsafeService {
         list.addLast(nextInteger);
     }
    /*
-Hilo 1
-int nextNumber = 0;
-Hilo2
-int nextNumber = 0;
-int size = list.size(); f0)
-int size = list.size(); (0)
-if (size > 0) (
-nextNumber=
-list.getLast() + 1;
-Integer nextInteger =
-new_Integer(nextNumber);
-list.addLast(nextInteger);
-fInsertar 0)
+Hilo 1                                             Hilo2  
+int nextNumber = 0;                           int nextNumber = 0;
+
+
+int size = list.size(); {0})
+                                            int size = list.size(); (0)
 if (size > 0) {
-if (size > 0)
-nextNumber =
-list.getLast() + 1;
+    nextNumber=
+        list.getLast() + 1;
+}
 Integer nextInteger =
-}new_Integer(nextNumber);
+    new_Integer(nextNumber);
 list.addLast(nextInteger);
-(Insertar 0)*/
+{Insertar 0}
+                                             if (size > 0) {
+                                                 nextNumber =
+                                                     list.getLast() + 1;
+                                                }                                        
+                                                Integer nextInteger =
+                                                      new_Integer(nextNumber);
+                                                list.addLast(nextInteger);
+                                                {Insertar 0}
+*/
     //0 => 2 ... => n-1
     
     public synchronized int[] getArray() {
